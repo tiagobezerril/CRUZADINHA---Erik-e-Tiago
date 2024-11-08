@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+    
+    body{
+    background-color: #D7E6EB;
+    font-family: monospace;
+    background-image: url(imagens/imagem\ de\ fundo.jpg);
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: center;
+
+}
+    header h1 {
+    background-color: #79a3be;
+    padding: unset;
+    border-style: ridge;
+    }
+    header {
+    text-align: center;
+    font-size: auto;
+    background-color: #ffffff;
+    }
+    
+    
+    table {
+        border: 1px #1F618D solid;
+        font-size:25px; 
+        margin-left: 130px;
+        margin: auto;
+    }
+    
+    
+    tr {
+        border: 1px #1F618D solid;
+    }
+    
+    td {
+        border: 1px #1F618D solid;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        vertical-align: center;
+    }
+    
+    button{
+        cursor: pointer;
+        border: 0px;
+        background-color: #79a3be;
+        color: #ffffff;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 5px;
+        transition: 2s linear;
+        box-shadow: 8px 7px 20px 0px rgba(49, 36, 110, 0.932);
+    }
+    
+    .container{
+        width: 1100px;
+        margin: auto;
+        
+    }
+    
+    #div_questions{
+    background-color:#85C1E9;
+    width: 700px;
+    margin: auto;
+    }
+    
+    .button{
+        margin: auto;
+        display: inline-block;
+        transition: 2s linear;
+    }
+    
+    #button_verify{
+        width: 100px;
+        margin: auto;
+        transition: 2s linear;
+    }
+    #input_answer{
+        width: 100px;
+        margin: auto;
+    }
+    
+    .deadCell{
+        background-color: #1F618D;
+    }
+    .availableCell{
+        background-color: #ffffff;
+    }
+    
+    footer{
+        height: 89px;
+        color: #000000;
+        font-family: monospace;
+        background-color: #ffffff;
+        position: fixed;
+    }
+    footer p{
+        text-align: center;
+        font-family: monospace;
+        position: fixed;
+    }
+    #div_information{
+        width: 500px;
+        margin: auto;
+        background-color: #79a3be;
+        border-radius: 5%;
+        font-size: 20px;
+    }
+    
+    #div_verifiedAnswer{
+        width: 500px;
+        height: 70px;
+        margin: auto;
+        text-align: center;
+        font-size: 20px;
+        vertical-align:center;
+        margin-bottom: 20px;
+    }
+    .correctAnswer{
+        background-color: #58D68D;
+        color: #196F3D;
+        border:1px #196F3D solid;
+    }
+    .wrongAnswer{
+        background-color: #EC7063  ;
+        color: #7B241C;
+        border:1px #7B241C solid;
+    
+    }
+    .div_button {
+        display:flex;
+        align-content: center;
+    }
+
+    .div_game {
+    display: flex;
+    text-align: center;
+    }
+    
+    .instrucao {
+        text-align:center;
+    }
