@@ -67,25 +67,25 @@
     </footer>
 
     <script>
-    var special_words = ['CPU', 'ULA', 'Registradores', 'RAM', 'ROM', 'EPROM', 'FLASH', 'Memória de Massa', 'DMA', 'CS', 'Adress Bus', 'Data Bus', 'I5', 'I7', 'Dual Core', 'Quad Core'];
+    var special_words = ['CPU', 'ULA', 'REGISTRADORES', 'RAM', 'ROM', 'EPROM', 'FLASH', 'MEMÓRIA DE MASSA', 'DMA', 'CS', 'ADRESS BUS', 'DATA BUS', 'I5', 'I7', 'DUAL CORE', 'QUAD CORE'];
 
 var questions_list = [
     'Qual componente de um computador recebe, armazena e processa tarefas?',
     'Qual coponente dentro de uma CPU é conhecida por calcular comandos aritiméticos e lógicos?',
-    'Tipo de memória que se encontra no topo da hierarquia de memória',
-    'Tipo de memória volátil que tem como nome Random Acess Memory. Qual é a sigla deste componente?',
-    'Tipo de memória não volátil que oferece dados apenas para leitura',
-    'Tipo de memória não volátil que precisa ter seu chip exposto a luz ultravioleta para apagar seu conteúdo',
-    'Tipo particular de EEPROM que mantém as informações armazenadas sem a necessidade de uma fonte de energia elétrica',
-    'Tipo de memória que precisa ter seu conteúdo copiado na RAM para poder ser executado pela CPU',
-    'Permite que periféricos acessem diretamente a RAM sem ocupar processamento',
-    'Também conhecido como Slave Select (SS). Usado para selecionar um ou um conjunto de circuitos que estão conectados no computador',
-    'Grupo de linhas ou trilhas usadas para se referir a um endereço físico na memória. O número de trilhas determina a quantidade de endereços na memória física',
-    'Também chamado de Memory Bus. É responsável para carregar os dados.',
-    'Modelo de processador desenvolvido pela Intel qu teve sua primeira versão lançada em setembro de 2009',
-    'Modelo de processador desenvolvido pela Intel qu teve sua primeira versão lançada em novembro de 2008',    
-    'Tipo de processador que possui dois processadores ou melhor dizendo ‘dois centros, núcleos ou cores de execução‘ no mesmo circuito integrado.  Cada core tem sua própria memória cash e controlador o que permite que funcione mais efetivamente do que um processador single',
-    'Segue o mesmo princípio de um dual-core, mas agora em teoria tem o dobro da capacidade de processamento'
+    'Qual componente interno de uma CPU é responsável por armazenar de forma rápida dados e operações lógicas/aritméticas?',
+    'Qual memória é considerada volátil e é utilizada em programas em execução, dados temporários e memória em cache?',
+    'Qual é a memória não volátil utilizada para armazenar o firmware de inicialização do computador?',
+    'Qual tipo de ROM não volátil que pode ser reprogramada após apagada por luz ultravioleta?',
+    'Qual espécie de memória não volátil é usada em pendrives e SSDs para armazenamento permanente de dados?',
+    'Qual espécie de armazenamento usado para guardar grandes quantidades de dados de forma permanente?',
+    'Tecnologia moderna que permite o acesso direto à memória RAM sem intervenção constante da CPU',
+    'Sinal que ativa um chip específico em um barramento digital?',
+    'Qual é o nome do caminho que indica o endereço de memória onde o processador deve buscar ou enviar dados?',
+    'Qual barramento transporta os dados entre o processador e a memória?',
+    'Qual processador da Intel é conhecido por seu equilíbrio entre desempenho e eficiência, ideal para jogos leves?',    
+    'Qual processador com 4 a 8 núcleos que tem sua arquitetura projetada para multitarefas e ideal para edição de projetos mulltimídia?',
+    'Que tipo de processador é perfeito para atividades cotidianas, como navegação web e assistir a vídeos?',
+    'Que tipo de processador é perfeito para desempenhos mais robustos, como edição multimídia e jogos modernos?'
 ];
 
 var filledCell = [2, 20, 38, 133, 134, 135, 59, 77, 95, 113, 131, 149,
@@ -458,12 +458,12 @@ function paintCells() {
 
 function verify() {
     var answer = input_answer.value;
+    var texto_maiusculo = answer.toUpperCase()
 
 
-
-    if (answer != '') {
-        // answer = answer.toLowerCase();
-        if (answer == special_words[cont_correctAnswer]) {
+    if (texto_maiusculo != '') {
+       
+        if (texto_maiusculo == special_words[cont_correctAnswer]) {
             div_verifiedAnswer.classList.add('correctAnswer');
             div_verifiedAnswer.innerHTML = '<br>Resposta Correta!';
             cont_correctAnswer++;
